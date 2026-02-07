@@ -23,7 +23,6 @@ function AppLayout() {
 
   const showControls = location.pathname === "/";
 
-  // ✅ STATE DERIVED FROM URL
   const search = searchParams.get("q");
   const type = searchParams.get("type") || "";
   const page = Number(searchParams.get("page")) || 1;
@@ -56,7 +55,7 @@ function AppLayout() {
 
   useEffect(() => {
     fetchMovies();
-  }, [fetchMovies]); // ✅ no warning
+  }, [fetchMovies]);
 
   useEffect(() => {
     if (window.performance?.navigation?.type === 1) {
