@@ -18,7 +18,7 @@ function MovieList({ movies, favorites, onToggleFavorite }) {
 
         return (
           <div
-            key={movie.imdbID} // ✅ unique key (no warning)
+            key={movie.imdbID} 
             className="bg-gray-800 rounded-xl overflow-hidden shadow-lg
                        hover:scale-95 transition"
           >
